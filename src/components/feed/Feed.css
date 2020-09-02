@@ -1,0 +1,40 @@
+.Feed {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    margin: 100px 30px 10px 190px;
+}
+
+.Feed .post {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 10px 100px;
+    padding: 10px 15px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    background-color: #dcefff;
+}
+
+.Feed .post .postMenu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+    padding-top: 5px;
+    border-top: 1px solid black;
+    cursor: pointer;
+}
+
+.Feed .post .postMenu i {
+    padding: 5px 30px;
+    border: 1px solid transparent;
+}
+
+.Feed .post .postMenu i:hover {
+    border: 1px solid black;
+}
+
+.Feed .post .postMenu i span {
+    padding-left: 15px;
+}
