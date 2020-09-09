@@ -3,6 +3,5 @@ export default (element, defaultHeight) => {
         const target = element.target ? element.target : element
         target.style.height = defaultHeight
         target.style.height = `${target.scrollHeight}px`
-        target.style.width = '1px'
     }
 }
