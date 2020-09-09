@@ -4,9 +4,9 @@
     position: fixed;
     width: 100%;
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
-    background-color: #f0f8ff;
+    background-color: #ffffff;
     border-bottom: 3px solid #d8d8da;
 }
 
@@ -32,11 +32,11 @@
     justify-content: space-between;
     align-items: center;
     border: 1px solid transparent;
-    background-color: #c8f0fa;
+    background-color: #e9e9ec;
     border-radius: 50px;
-    margin-left: 30vw;
     padding: 5px;
-    width: 300px;
+    width: 500px;
+    margin-right: 7vw;
 }
 
 .searchBar input {
@@ -44,7 +44,7 @@
     width: 280px;
     outline: none;
     border: none;
-    background-color: #c8f0fa;
+    background-color: #e9e9ec;
 }
 
 .searchBar button {
@@ -61,13 +61,41 @@
     margin-top: 59px;
     height: 100%;
     width: 180px;
+    background-color: #ffffff;
+}
+
+.sideBar .profile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 10px 0;
+    padding: 7px 7px;
+    border: 1px solid transparent;
+    background-color: #f0f0f3;
+    border-radius: 10px;    
+}
+
+.sideBar .profile img {
+    border: 1px solid transparent;
+    border-radius: 50px;
+    height: 30px;
+    width: 30px;
+    padding: 5px;
+    background-color: rgb(168, 168, 168);
+}
+
+.sideBar .profile h3 {
+    font-size: 18px;
+    font-weight: 500;
+    padding-left: 7px;
 }
 
 .sideBar ul {
     display: flex;
     flex-direction: column;
     height: 90vh;
-    background-color: #f0f8ff;
+    background-color: #ffffff;
+    margin-top: 30px;
 }
 
 .sideBar ul:first-child {
@@ -84,12 +112,12 @@
 }
 
 .sideBar a:hover {
-    color: gray;
+    color: #4797ff;
     width: 190px;
-    border-left: 5px solid gray;
+    border-left: 5px solid #4797ff;
     border-top-right-radius: 7px;
     border-bottom-right-radius: 7px;
-    background-color: #f0f8ff;
+    background-color: #fdfdfd;
     box-shadow: 0px 0px 7px 3px #e0e9f0;
 }
 

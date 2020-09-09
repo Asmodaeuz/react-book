@@ -13,5 +13,6 @@
 
 .App .content {
   display: flex;
+  min-height: 100vh;
   background-color: #f0f0f4;
 }

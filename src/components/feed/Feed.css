@@ -1,38 +1,80 @@
 .Feed {
+    width: 100vw;
+    margin: 60px 0 0 180px;
+}
+
+.Feed .wrapper {
     display: flex;
     flex-direction: column;
-    width: 100vw;
-    margin: 100px 30px 10px 190px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.Feed .wrapper:first-child {
+    margin-top: 50px;
 }
 
 .Feed .post {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    margin: 10px 100px;
-    padding: 10px 15px;
+    margin: 10px 0;
+    padding: 10px 15px 0px;
     border: 1px solid transparent;
     border-radius: 10px;
-    background-color: #dcefff;
+    background-color: #fdfdfd;
+    max-width: 600px;
+}
+
+.Feed .post .postProfile {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
+}
+
+.Feed .post .postProfile img {
+    border: 1px solid transparent;
+    border-radius: 50px;
+    height: 40px;
+    width: 40px;
+    padding: 5px;
+    background-color: rgb(168, 168, 168);
+}
+
+.Feed .post .postProfile h3 {
+    font-weight: 500;
+}
+
+.Feed .post .postProfile .postInfo {
+    padding-left: 15px;
+}
+
+.Feed .post p {
+    margin-left: 15px;
 }
 
 .Feed .post .postMenu {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-top: 30px;
-    padding-top: 5px;
     border-top: 1px solid black;
     cursor: pointer;
 }
 
 .Feed .post .postMenu i {
-    padding: 5px 30px;
+    padding: 10px 68px;
     border: 1px solid transparent;
 }
 
 .Feed .post .postMenu i:hover {
-    border: 1px solid black;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    color: #4797ff;
+    background-color: #fdfdfd;
+    box-shadow: inset 0px 0px 3px 20px #e9e9ec61;
 }
 
 .Feed .post .postMenu i span {
