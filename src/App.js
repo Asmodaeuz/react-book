@@ -5,11 +5,13 @@ import main from './components/main/main'
 import Home from './pages/home/Home'
 import NewPost from './pages/newpost/NewPost'
 import Feed from './components/feed/Feed'
+import Saved from './pages/saved/Saved'
 
 const Header = main.Header
 const SideBar = main.SideBar
 
 class App extends React.Component {
+
     render() {
         return (
             <Router>
@@ -29,9 +31,9 @@ class App extends React.Component {
                             <Route path="/feed">
                                 <Feed />
                             </Route>
-                            {/*<Route path="/saved">
-                                <Feed />
-                            </Route>*/}
+                            <Route path="/saved">
+                                <Saved />
+                            </Route>
                         </Switch>
                     </div>
                 </div>

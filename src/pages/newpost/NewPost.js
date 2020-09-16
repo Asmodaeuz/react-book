@@ -1,13 +1,66 @@
 import React from 'react'
 import './NewPost.css'
 import setInputHeight from '../../components/setInputHeight'
+import { createPost } from '../../core/CoreFunctions'
+import moment from 'moment'
 
 class NewPost extends React.Component {
 
+    constructor(props) {
+        super()
+
+        this.state = {
+            content: ''
+        }
+    }
+
     inputRef = null
 
-    componentDidMount() {
-        console.log(this.inputRef)
+    createPost() {
+        const post = {
+            id: '1',
+            user: {
+                name: "Asmodaeuz",
+                profilePicture: "https://cdn.iconscout.com/icon/premium/png-256-thumb/demon-1428972-1207165.png" 
+            },
+            data: this.getCurrentDate(),
+            content: this.state.content,
+            isSaved: false
+        }
+        if(this.state.content !== '') {
+            createPost(post)
+            window.location.reload()
+        } else {
+            return
+        }
+        
+    }
+
+    getCurrentDate() {
+        const date = moment().format('L')
+        const time = moment().format('LT')
+
+        return `${date} ${time}`
+    }
+
+    postContent(event) {
+        setInputHeight(event, '100px')
+        if(event.target.value!== '') {
+            this.setState({
+                content: event.target.value
+            })
+        } else {
+            return
+        }
+    }
+
+    cancelPost() {
+        this.setState({
+            content: ''
+        })
+        const inputValue = document.querySelector('textarea')
+        inputValue.value = ''
+        inputValue.style.height = '100px'
     }
 
     render() {
@@ -23,12 +76,18 @@ class NewPost extends React.Component {
                         <textarea
                             ref={(ref) => this.inputRef = ref}
                             placeholder="What's on your mind?"
-                            onChange={(event) => setInputHeight(event, '100px')}  
+                            onChange={(event) => this.postContent(event)} 
                         />
                     </div>
                     <div className="createMenu">
-                        <i className="far fa-times-circle"><span>Cancel</span></i>
-                        <i className="far fa-check-circle"><span>Publich</span></i>
+                        <i 
+                            className="far fa-times-circle"
+                            onClick={(event) => {this.cancelPost(event)}}
+                        ><span>Cancel</span></i>
+                        <i 
+                            className="far fa-check-circle"
+                            onClick={() => {this.createPost()}}
+                        ><span>Publish</span></i>
                     </div>
                 </div>
             </div>

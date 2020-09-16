@@ -1,16 +1,16 @@
 import React from 'react'
-import './Feed.css'
+import './Saved.css'
 import moment from 'moment'
-import Post from '../Post'
-import { loadPosts, createPost } from '../../core/CoreFunctions'
+import Post from '../../components/Post'
+import { loadSavedPosts } from '../../core/CoreFunctions'
 
-class Feed extends React.Component {
+class Saved extends React.Component {
 
     constructor(props) {
         super(props)
 
         this.state = {
-            posts: loadPosts()
+            posts: loadSavedPosts()
         }
     }
 
@@ -23,11 +23,12 @@ class Feed extends React.Component {
 
     getPosts() {
         this.setState(
-            {posts: loadPosts()}
+            {posts: loadSavedPosts()}
         )
     }
 
     renderPosts() {
+
         let posts = this.state.posts.map((post) => {
             return (
                 <Post post={post} />
@@ -39,12 +40,12 @@ class Feed extends React.Component {
     render() {
 
         return (
-            <div className="Feed">
+            <div className="Saved">
                 <div className="wrapper">
                     {this.renderPosts()}
                     {this.state.posts.length === 0 &&
-                    <div className="noPosts">
-                        <h1>Nothing to show here yet.</h1>
+                    <div className="noSaves">
+                        <h1>Your saved posts will be here.</h1>
                     </div>
                     }
                 </div>
@@ -53,4 +54,4 @@ class Feed extends React.Component {
     }
 }
 
-export default Feed
+export default Saved

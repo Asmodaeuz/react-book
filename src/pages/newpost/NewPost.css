@@ -28,10 +28,10 @@
 
 .createSection h3 {
     width: 100%;
-    padding: 5px 0;
+    padding: 10px 0;
     font-weight: 500;
-    font-size: 26px;
-    border-bottom: 1px solid black;
+    font-size: 26px;    
+    border-bottom: 1px solid #e9e9ec;
     text-align: center;
 }
 
@@ -86,16 +86,18 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    width: 550px;
     padding-top: 1px;
-    margin: 0 10px;
-    border-top: 1px solid black;
+    margin: 0 10px 10px;
+    border-radius: 5px;
+    background-color: #e9e9ec80;
 }
 
 .createSection .createMenu i {
     font-size: 20px;
     display: flex;
     justify-content: center;
-    padding: 10px 100px;
+    padding: 10px 93px;
     box-sizing: border-box;
 }
 
@@ -103,7 +105,7 @@
     border: 0 solid transparent;
     border-radius: 5px;
     color: #4797ff;
-    background-color: #fdfdfd;
+    background-color: #e9e9ec61;
     box-shadow: inset 0px 0px 3px 20px #e9e9ec61;
     cursor: pointer;
 }
@@ -112,20 +114,20 @@
     padding-left: 10px;
 }
 
-textarea::-webkit-scrollbar {
+*::-webkit-scrollbar {
     width: 5px;
   }
   
-textarea::-webkit-scrollbar-track {
+*::-webkit-scrollbar-track {
     background: #ffffff;
 }
 
-textarea::-webkit-scrollbar-thumb {
+*::-webkit-scrollbar-thumb {
     background: #d4d4d4;
     border-radius: 3px;
 }
   
-textarea::-webkit-scrollbar-thumb:hover {
+*::-webkit-scrollbar-thumb:hover {
     background: #9e9e9e;
     cursor: context-menu !important;
 }

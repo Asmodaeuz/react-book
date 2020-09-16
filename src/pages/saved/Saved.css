@@ -1,9 +1,9 @@
-.Feed {
+.Saved {
     width: 100vw;
     margin: 60px 0 0 180px;
 }
 
-.Feed .wrapper {
+.Saved .wrapper {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -11,11 +11,11 @@
     height: 100%;
 }
 
-.Feed .wrapper .post:first-of-type {
+.Saved .wrapper .post:first-of-type {
     margin-top: 50px;
 }
 
-.Feed .wrapper .noPosts {
+.Saved .wrapper .noSaves {
     height: 100%;
     width: 100%;
     display: flex;
@@ -23,7 +23,7 @@
     align-items: center;
 }
 
-.Feed .post {
+.Saved .post {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -35,14 +35,14 @@
     max-width: 600px;
 }
 
-.Feed .post .postProfile {
+.Saved .post .postProfile {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     padding: 10px;
 }
 
-.Feed .post .postProfile img {
+.Saved .post .postProfile img {
     border: 1px solid transparent;
     border-radius: 50px;
     height: 40px;
@@ -51,19 +51,19 @@
     background-color: rgb(168, 168, 168);
 }
 
-.Feed .post .postProfile h3 {
+.Saved .post .postProfile h3 {
     font-weight: 500;
 }
 
-.Feed .post .postProfile .postInfo {
+.Saved .post .postProfile .postInfo {
     padding-left: 15px;
 }
 
-.Feed .post p {
+.Saved .post p {
     margin-left: 15px;
 }
 
-.Feed .post .postMenu {
+.Saved .post .postMenu {
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -72,12 +72,12 @@
     cursor: pointer;
 }
 
-.Feed .post .postMenu i {
+.Saved .post .postMenu i {
     padding: 10px 68px;
     border: 1px solid transparent;
 }
 
-.Feed .post .postMenu i:hover {
+.Saved .post .postMenu i:hover {
     border: 1px solid transparent;
     border-radius: 5px;
     color: #4797ff;
@@ -85,6 +85,6 @@
     box-shadow: inset 0px 0px 3px 20px #e9e9ec61;
 }
 
-.Feed .post .postMenu i span {
+.Saved .post .postMenu i span {
     padding-left: 15px;
 }

@@ -16,7 +16,7 @@ class Home extends React.Component {
                                         and be close of what and who you like, even in distance.
                                     </p>
                                 </div>
-                                <i class="far fa-eye"></i>
+                                <i className="far fa-eye"></i>
                         </div>
                         <div className="feature">
                                 <div>
@@ -26,7 +26,7 @@ class Home extends React.Component {
                                         world to see.
                                     </p>
                                 </div>
-                                <i class="fas fa-retweet"></i>
+                                <i className="fas fa-retweet"></i>
                         </div>
                         <div className="feature">
                                 <div>
@@ -36,7 +36,7 @@ class Home extends React.Component {
                                         your firm is working on or learn a few things with those videos.
                                     </p>
                                 </div>
-                                <i class="far fa-save"></i>
+                                <i className="far fa-save"></i>
                         </div>
                     </div>
                 </div>
