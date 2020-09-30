@@ -1,7 +1,7 @@
 import React from 'react'
 import './NewPost.css'
 import setInputHeight from '../../components/setInputHeight'
-import { createPost } from '../../core/CoreFunctions'
+import { generateId, createPost } from '../../core/CoreFunctions'
 import moment from 'moment'
 
 class NewPost extends React.Component {
@@ -18,7 +18,7 @@ class NewPost extends React.Component {
 
     createPost() {
         const post = {
-            id: '1',
+            id: generateId(),
             user: {
                 name: "Asmodaeuz",
                 profilePicture: "https://cdn.iconscout.com/icon/premium/png-256-thumb/demon-1428972-1207165.png" 

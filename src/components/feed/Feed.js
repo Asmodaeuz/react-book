@@ -2,7 +2,7 @@ import React from 'react'
 import './Feed.css'
 import moment from 'moment'
 import Post from '../Post'
-import { loadPosts, createPost } from '../../core/CoreFunctions'
+import { loadPosts} from '../../core/CoreFunctions'
 
 class Feed extends React.Component {
 

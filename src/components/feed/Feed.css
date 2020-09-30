@@ -15,6 +15,53 @@
     margin-top: 50px;
 }
 
+.Feed .wrapper .post .textArea > textarea {
+    min-height: 100px;
+    max-height: 300px;
+    min-width: 550px;
+    max-width: 550px;
+    resize: none;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    padding: 10px 15px;
+    box-sizing: border-box;
+    background-color: #f0f0f3;
+    font-size: 18px;
+}
+
+.Feed .wrapper .post .createMenu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 550px;
+    padding-top: 1px;
+    margin: 10px 0;
+    border-radius: 5px;
+    background-color: #e9e9ec80;
+}
+
+.Feed .wrapper .post .createMenu i {
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    padding: 10px 93px;
+    box-sizing: border-box;
+}
+
+.Feed .wrapper .post .createMenu i:hover {
+    border: 0 solid transparent;
+    border-radius: 5px;
+    color: #4797ff;
+    background-color: #e9e9ec61;
+    box-shadow: inset 0px 0px 3px 20px #e9e9ec61;
+    cursor: pointer;
+}
+
+.Feed .wrapper .post .createMenu span {
+    padding-left: 10px;
+}
+
 .Feed .wrapper .noPosts {
     height: 100%;
     width: 100%;
